@@ -22,7 +22,10 @@ public class WhileGaji02 {
             }
             else if (jabatan.equalsIgnoreCase("karyawan")) {
                 gajiLembur = jumlahJamLembur * 75000;
-            }          
+            } else {
+                system.out.println("Jabatan invalid");
+                i--;
+                continue;
             totalGajiLembur += gajiLembur;
         }
         System.out.println("Total gaji lembur = " + totalGajiLembur);
