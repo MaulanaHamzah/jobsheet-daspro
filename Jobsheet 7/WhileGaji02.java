@@ -6,14 +6,14 @@ public class WhileGaji02 {
         double gajiLembur = 0, totalGajiLembur = 0;
         String jabatan;
         System.out.print("Masukkan jumlah karyawan = ");
-        jumlahKaryawan = sc.nextInt();
+        jumlahKaryawan = scan.nextInt();
         int i = 0;
         while (i < jumlahKaryawan) {
             System.out.println("Pilihan jabatan - Direktur, Manajer, Karyawan");
             System.out.print("Masukkan jabatan karyawan ke- " + (i+1) + ": ");
-            jabatan = sc.next();
+            jabatan = scan.next();
             System.out.print("Masukkan jumlah jam lembur = ");
-            jumlahJamLembur = sc.nextInt();
+            jumlahJamLembur = scan.nextInt();
             i++;
             if (jabatan.equalsIgnoreCase("direktur")) {
                 continue;
