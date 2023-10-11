@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class WhileGaji02 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int jumlahKaryawan, jumlahJamLembur;
         double gajiLembur = 0, totalGajiLembur = 0;
         String jabatan;
@@ -23,9 +23,10 @@ public class WhileGaji02 {
             else if (jabatan.equalsIgnoreCase("karyawan")) {
                 gajiLembur = jumlahJamLembur * 75000;
             } else {
-                system.out.println("Jabatan invalid");
+                System.out.println("Jabatan invalid");
                 i--;
                 continue;
+            }
             totalGajiLembur += gajiLembur;
         }
         System.out.println("Total gaji lembur = " + totalGajiLembur);
